@@ -9,8 +9,8 @@ Base.metadata.create_all(engine)
 
 with DBConnectionHandler() as db:
     try:
-        new_user = Users(name='admin', role=1, email='admin@suzy.com', password=hash_password('admin'))
-        db.session.add(new_user)
+        #new_user = Users(name='admin', role=1, email='admin@suzy.com', password=hash_password('admin'))
+        #db.session.add(new_user)
         db.session.commit()
     except Exception as ex:
         print(ex)
